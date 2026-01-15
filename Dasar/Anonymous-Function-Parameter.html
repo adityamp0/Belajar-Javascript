@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function giveMeName(callback) {
+            callback("Delta");
+        }
+
+        giveMeName(function(name) {
+            alert(`Hello, ${name}!`);
+        }); // Output: Hello, Delta!
+    </script>
+</body>
+</html>
