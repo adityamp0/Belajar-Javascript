@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName: "Aditya",
+            lastName: "Maulana",
+            address: {
+                street: "Jl. Merdeka No. 10",
+                city: "Jakarta",
+                country: "Indonesia"
+            },
+
+            hobby : "Programming",
+            channel : "Aditya Maulana Pamungkas"
+        };
+
+        const {firstName, lastName, address: {city, country}, hobby, channel} = person;
+        console.info(firstName);
+        console.info(lastName);
+        console.info(city);
+        console.info(country);
+    </script>
+</body>
+</html>
