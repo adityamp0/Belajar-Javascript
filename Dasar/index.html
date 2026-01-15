@@ -1,0 +1,121 @@
+<html>
+<head>
+</head>
+<body>
+    <script>
+        // komentar satu baris
+        document.writeln("<p>Hello, World!</p>");
+
+        /*
+          komentar
+          beberapa baris
+        */
+        document.writeln("<p>Welcome to JavaScript programming.</p>");
+    
+        // Tipe data number
+        document.writeln(100)
+        document.writeln("<br>");
+        document.writeln(100.110)
+
+        // Tipe data boolean
+        document.writeln(true);  
+        document.writeln("<br>");
+        document.writeln(false);
+
+        // Tipe data string
+        document.writeln("Example String");
+        document.writeln("<br>");
+        document.writeln('Another Example String');
+
+        // Menambah string
+        document.writeln("Nama saya " + "John Doe");
+        document.writeln("<br>");
+        document.writeln("Umur saya " + 25 + " tahun");
+
+        // Escape karakter
+        document.writeln("<textarea cols='100' rows='10'>");
+        document.writeln("He said, \"Hello!\"");
+        document.writeln("<br>");
+        document.writeln('It\'s a beautiful day!');
+            
+        // Variabel
+        var fullName = "John Doe";
+
+        fullName = "Jane Smith";
+
+        fullName = "Alice Johnson";
+
+        fullName = "Bob Brown";
+        document.writeln(fullName);
+
+        var firstName = "John";
+        var lastName = "Doe";
+        var fullName = firstName + " " + lastName;
+    
+        // variabel let
+        let city = "New York";
+        document.writeln(city); 
+        document.writeln("<br>");   
+
+        //variabel const
+        const country = "USA";
+        // country = "Canada"; // Akan menghasilkan error
+        document.writeln(country);
+
+        // Operasi aritmatika
+        let result = 10 + 5;
+        document.writeln("<p>Hasil penjumlahan: " + result + "</p>");
+        let originalResult = result;
+
+        result = result - 3;
+        document.writeln("<p>" + originalResult + " dikurangi 3 adalah " + result + "</p>");
+        originalResult = result;
+        
+        result = result * 2;
+        document.writeln("<p>" + originalResult + " dikali 2 adalah " + result + "</p>");
+        originalResult = result;
+            
+        let hasil = 10;
+        hasil += 10;
+        document.writeln("<p>" + "Hasil setelah ditambah 10 adalah " + hasil + "</p>");
+    
+        hasil -= 10;
+        document.writeln("<p>" + hasil + " dikurangi 10 adalah " + hasil + "</p>");
+
+        hasil *= 4;
+        document.writeln("<p>" + hasil + " dikali 4 adalah " + hasil + "</p>");
+
+        hasil ++;
+        document.writeln("<p>" + "Nilai setelah ditambah 1 adalah " + hasil + "</p>");
+
+        result = 5 == 5;
+        document.writeln("<p>Apakah 5 sama dengan 5? " + result + "</p>");  
+
+        const nilaiUjian = 85;
+        const nilaiAbsen = 90;
+
+        const lulusUjian = nilaiUjian >= 75;
+        const lulusAbsen = nilaiAbsen >= 75;
+
+        const lulus = lulusUjian && lulusAbsen;
+        document.writeln("<p>Apakah siswa lulus? " + lulus + "</p>");
+
+        const person = {
+            lastName: undefined
+        }
+
+        const result2 = "lastName" in person;
+        document.writeln("<p>Apakah properti 'lastName' ada dalam objek person? " + result2 + "</p>");
+        
+        const names = [null, "Alice", null];
+        const nameResult = 0 in names;
+        document.writeln("<p>Apakah indeks 0 ada dalam array names? " + nameResult + "</p>");
+        
+        const nilai2 = 80;
+        const ucapan = nilai2 >= 75 ? "Selamat, Anda lulus!" : "Maaf, Anda tidak lulus.";
+
+        document.writeln("<p>" + ucapan + "</p>");
+
+    </script>
+</body>
+</html>
