@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    class Person {
+        constructor(name) {
+            this.name = name;
+        }
+
+        sayHello(name) {
+            console.info(`Hello ${name}, my name is ${this.name}`);
+        }
+    }
+
+    class Employee extends Person {
+        sayHello(name) {
+            console.info(`Hello ${name}, my name is Employee ${this.name}`);
+        }
+    }
+
+    class Manager extends Employee {
+        sayHello(name) {
+            console.info(`Hello ${name}, my name is Manager ${this.name}`);
+        }
+    }
+
+    const budi = new Employee("Budi")
+    budi.sayHello("Adit")
+
+    const adit = new Manager("Adit")
+    adit.sayHello("Budi")
+</script>
+
+</body>
+</html>

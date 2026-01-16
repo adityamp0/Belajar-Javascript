@@ -7,6 +7,14 @@
 </head>
 <body>
     <script>
+        function Person(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName  = lastName;
+            this.sayHello = function(name) {
+                console.info(`Hello ${name}, my name is ${this.firstName} ${this.lastName}`);
+            }
+        }
+
         const adit = new Person(
             "Aditya",
             "Maulana Pamungkas"
@@ -19,6 +27,18 @@
 
         console.info(adit);
         console.info(budi);
+
+        adit.sayBye = function() {
+            console.info("Good bye!")
+        }
+
+        Person.prototype.sayBye = function() {
+            console.info("Good bye!")
+        }
+
+        Person.prototype.run = function() {
+            console.info(`${this.firstName} is running`)
+        }
     </script>
 </body>
 </html>
